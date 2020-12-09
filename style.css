@@ -1,0 +1,9 @@
+.trueClass {
+    background: greenyellow;
+}
+.falseClass {
+    background: #caf0f1;
+}
+.anotherClass {
+    background: rgb(245, 73, 73) !important;
+}

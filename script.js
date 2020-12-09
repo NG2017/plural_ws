@@ -11,7 +11,7 @@ function _load(){
     //console.log(aTextArray[index]);
 
     rootE.insertAdjacentHTML("beforeend", `
-      <div class="fruit">${aTextArray[index]}</div>
+      <div class="fruit">${index + 1}: ${aTextArray[index]}</div>
     `);
 
   }
@@ -29,12 +29,14 @@ function _load(){
     if(index % 2 === 0){
       fruitDivs[index].classList.add("trueClass");
 
-    } else if(index % 5 === 0) {
-      fruitDivs[index].classList.add("anotherClass");
-
+  
     } else {
       fruitDivs[index].classList.add("falseClass");
     }
+    if((index + 1) % 5 === 0) {
+      fruitDivs[index].classList.add("anotherClass");
+    }  
+
     
   }
 
